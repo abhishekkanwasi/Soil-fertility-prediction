@@ -1,0 +1,45 @@
+✅ Sample Inputs (Try these in your form)
+🌱 Sample 1: Likely High Fertility
+Nitrogen: 90
+
+Phosphorus: 40
+
+Potassium: 38
+
+pH: 6.5
+
+Temperature: 28
+
+Humidity: 80
+
+Rainfall: 200
+
+🌿 Sample 2: Likely Moderate Fertility
+Nitrogen: 60
+
+Phosphorus: 25
+
+Potassium: 18
+
+pH: 5.8
+
+Temperature: 30
+
+Humidity: 70
+
+Rainfall: 160
+
+🌾 Sample 3: Likely Low Fertility
+Nitrogen: 35
+
+Phosphorus: 12
+
+Potassium: 8
+
+pH: 4.2
+
+Temperature: 32
+
+Humidity: 55
+
+Rainfall: 120

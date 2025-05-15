@@ -1,0 +1,109 @@
+🌱 Soil Fertility Prediction Web App
+This project is a machine learning-based web application that predicts soil fertility levels (High, Moderate, or Low) based on various soil and weather parameters. It uses a Random Forest Classifier and a Flask web interface to allow users to input values and receive real-time predictions.
+
+📁 Project Structure
+
+soil_fertility_prediction/
+├── static/
+│   └── style.css                # Custom CSS styling
+├── templates/
+│   └── index.html               # Frontend HTML form
+├── app.py                       # Flask application
+├── train_model.py               # Model training script
+├── soil_data.csv                # Input dataset (labeled)
+├── soil_fertility_model.pkl     # Saved trained model
+└── README.md                    # Project documentation (this file)
+🚀 Features
+✔️ Real-time prediction of soil fertility
+
+✔️ Simple and responsive web UI
+
+✔️ Trained on actual agricultural soil data
+
+✔️ Uses RandomForestClassifier for high accuracy
+
+✔️ Modular code structure and easily extendable
+
+🧪 Input Parameters
+Parameter	Description	Example
+Nitrogen	Nitrogen content in soil (mg/kg)	90
+Phosphorus	Phosphorus content (mg/kg)	40
+Potassium	Potassium content (mg/kg)	38
+pH	Acidity/alkalinity of the soil	6.5
+Temperature	Soil temperature (°C)	28
+Humidity	Humidity percentage (%)	80
+Rainfall	Rainfall in millimeters (mm)	200
+
+🧠 Model Training
+To train the model and save it for prediction:
+
+
+python train_model.py
+This script:
+
+Loads soil_data.csv
+
+Trains a RandomForestClassifier
+
+Saves the model as soil_fertility_model.pkl
+
+🌐 Running the Web App
+To start the Flask application:
+
+
+python app.py
+Then open your browser and navigate to:
+
+
+http://127.0.0.1:5000
+🧪 Sample Test Inputs
+You can enter the following values on the form to test the prediction system.
+
+🔸 Sample 1 — High Fertility
+
+Nitrogen:     90
+Phosphorus:   40
+Potassium:    38
+pH:           6.5
+Temperature:  28
+Humidity:     80
+Rainfall:     200
+🔸 Sample 2 — Moderate Fertility
+
+Nitrogen:     60
+Phosphorus:   25
+Potassium:    18
+pH:           5.8
+Temperature:  30
+Humidity:     70
+Rainfall:     160
+🔸 Sample 3 — Low Fertility
+
+Nitrogen:     35
+Phosphorus:   12
+Potassium:    8
+pH:           4.2
+Temperature:  32
+Humidity:     55
+Rainfall:     120
+⚙️ Requirements
+Install the required libraries with:
+
+
+pip install -r requirements.txt
+requirements.txt contents:
+
+Flask
+scikit-learn
+pandas
+🧩 Future Enhancements
+✅ Add CSV upload support for bulk predictions
+
+✅ Deploy to cloud (Render, PythonAnywhere, etc.)
+
+✅ Add confidence scores and probability outputs
+
+✅ Visualize input vs. fertility using charts
+
+✅ Extend dataset with organic carbon, EC, etc.
+
